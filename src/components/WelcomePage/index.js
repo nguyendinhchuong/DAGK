@@ -1,8 +1,17 @@
-import React from "react"
+import React, { Component } from 'react';
+import '../style.css';
+import PeopleList from '../PeopleList';
+import ChatRoom from '../ChatRoom';
 
-
-const Home = () =>(
-    <div>Login succesfully</div>
-)
+class Home extends Component{
+    render(){
+        return(
+            <div className="container clearfix">
+                <PeopleList />
+                <ChatRoom />
+            </div>
+        )
+    }
+}
 
 export default Home
